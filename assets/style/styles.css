@@ -18,14 +18,18 @@
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
   
 body {
     background-color: #eee;
     font-family: 'Lato', sans-serif;
 }
-  
+
+.clear {
+    clear: left;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -80,7 +84,7 @@ nav ul li .nav-link::before {
 nav ul li .nav-link:hover {
     background-color: #fff;
     color: rgb(247, 158, 67);
-  }
+}
 
 
 .cta {
@@ -100,7 +104,14 @@ nav ul li .nav-link:hover {
     color: #fff;
 }
 
-
+.menu-icon {
+    color: white;
+    float: right;
+    font-size: 25px;
+    padding: 21px 0;
+    /* Gantikan property display ke none */
+    visibility: hidden;
+}
 
 #hero {
     width: 100%;
@@ -115,7 +126,7 @@ nav ul li .nav-link:hover {
 }
 
 #hero h2 {
-    padding-top: 200px;
+    padding-top: 300px;
     padding-left: 75px;
     font-size: 40pt;
     font-weight: bold;
@@ -130,15 +141,12 @@ h2 span {
     font-size: 1.5rem;
 }
 
-
-
 .service-wrapper {
-  height: 750px;
-  background-color: #fffbf2;
-  text-align: center;
-  padding-bottom: 80px;
-  padding-right: 5%;
-  padding-left: 5%;
+    background-color: #fffbf2;
+    text-align: center;
+    padding-bottom: 80px;
+    padding-right: 5%;
+    padding-left: 5%;
 }
 
 .service {
@@ -177,21 +185,61 @@ h2 span {
     font-size: 18px;
 }
 
+.authors-wrapper {
+	padding-bottom: 80px;
+	background-color: #ffff;
+	text-align: center;
+	padding-right: 5%;
+	padding-left: 5%;
+}
+
+.a-heading {
+    padding-top: 115px;
+    padding-bottom: 15px;
+}
+
+.a-heading h2{
+	font-size:36px;
+	line-height:64px;
+	color:#ff7e00;
+}
+
+.author-list{
+	float:left;
+	width:20%;
+}
+
+.pos {
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.ava {
+	position:relative;
+	width:160px;
+	height:160px;
+	margin-bottom:10px;
+}
+
 /*Footer*/
 footer {
-  background-color: #fc8e1e;
-  opacity: 0.7;
-  text-align: center;
-  padding-bottom: 20px;
+    background-color: #fc8e1e;
+    opacity: 0.7;
+    text-align: center;
+    padding-bottom: 20px;
 }
+
 footer p {
-  font-size: 18px;
-  line-height: 27px;
-  color: #fff;
+    font-size: 18px;
+    line-height: 27px;
+    color: #fff;
 }
+
 footer .sosmed {
-  margin: 20px 0;
+    margin: 20px 0;
 }
+
 footer .sosmed img {
-  margin: 0 8px;
+    margin: 0 8px;
 }
