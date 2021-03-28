@@ -14,11 +14,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>C21</title>
+    <link rel="shortcut icon" href="assets/images/android-chrome-192x192.png"/>
     <link rel="stylesheet" href="assets/style/styles.css">
+    <link rel="stylesheet" href="assets/style/responsive.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
+
     
 <body>
-    <!--Part: Adam G.-->
+    <!--Part: Navbar-->
     <div class="navbar">     
         <div class="logo">
             <img src="assets/images/logo navbar.png" id="header-img" alt="C21 COMPANY">
@@ -28,20 +32,29 @@
             <ul>
                 <li><a href="#hero" class="nav-link">Home</a></li>
                 <li><a href="#service" class="nav-link">Service</a></li>
-                <li><a href="#" class="nav-link">Founders</a></li>
-                <span class="cta" href="#">Contact Us</span>
+                <li><a href="#authors" class="nav-link">Founders</a></li>
+                <span class="cta" href="#contact">Contact Us</span>
+                <span class="fa fa-bars menu-icon"></span>
+                
             </ul>
+
         </nav>
     </div> 
 
+
+    <!--Header Hero-->
     <header id="hero">
         <h2><span>Democratize Technology</span></br> for Your Business</h2>
     
         <main> 
             <p>We are Providing the simplest solution for the most complex problem</p>
         </main>
+
+        <div class="pulse">
+            
+        </div>
+
     </header>
-    <!--End Part: Adam-->
     
     <!-- Section Service start -->
     <div id="service">
@@ -81,6 +94,7 @@
                     <p class="text-contents">We create & develop mobile application for your business purpose with latest technology & trends and feel app-like experience on desktop through to help users get fast & reliable experiences.</p>
                     </div>
                 </div>
+                <div class="clear"></div>
             </div>
         </div>
     </section>
@@ -90,15 +104,49 @@
 
 
     <!-- Section Authors Start -->
-    <section>
-
-    </section>
+    <div id = "authors">
+		<section class="authors-wrapper">
+			<div class="a-container">
+				<div class="a-heading">
+					<h2>Founders</h2>
+				</div>
+				<div class="author">
+					<div class="author-list">
+						<img class="ava" src="assets/images/robby.png" alt="robby">
+						<h2>Robby</h2>
+						<p class="pos">Anggota</p>
+					</div>
+					<div class="author-list">
+						<img class="ava" src="assets/images/akbar.png" alt="akbar" >
+						<h2>Akbar</h2>
+						<p class="pos">Anggota</p>
+					</div>
+					<div class="author-list">
+						<img class="ava" src="assets/images/adam.png" alt="adam">
+						<h2>Adam</h2>
+						<p class="pos">Ketua</p>
+					</div>
+					<div class="author-list">
+						<img class="ava" src="assets/images/laras.png" alt="laras">
+						<h2>Laras</h2>
+						<p class="pos">Anggota</p>
+					</div>
+					<div class="author-list">
+						<img class="ava" src="assets/images/rizky.png">
+						<h2>Irhandi</h2>
+						<p class="pos">Anggota</p>
+					</div>
+                    <div class="clear"></div>
+				</div>
+			</div>
+		</section>
+	</div>
     <!-- Section Authore end -->
 
 
     <!-- Part : Laras -->
     <!-- Footer Start -->
-    <footer>
+    <footer id="contact">
         <img src="assets/images/logo footer.png" alt="C21 Company">
         <p>Democratize Technology for Your Business</p>
         <div class="sosmed">
