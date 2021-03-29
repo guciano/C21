@@ -34,7 +34,7 @@ body {
     align-items: center;
     padding-left: 60px;
     padding-right: 60px;
-    height: 90px;
+    height: 70px;
     width: 100%;
     background-color: rgba(247, 158, 67, 0.7);
     position: fixed;
@@ -48,6 +48,7 @@ body {
     height: auto;
     display: block;
 }
+
 
 nav ul {
     display: flex;
@@ -73,9 +74,7 @@ nav ul li .nav-link {
     text-transform: uppercase;
 }
 
-nav ul li .nav-link,
-nav ul li .nav-link:after,
-nav ul li .nav-link::before {
+nav ul li .nav-link {
     transition: all .5s;
 }
 
@@ -242,37 +241,37 @@ footer .sosmed img {
 @media all and (max-width: 1025px) {
     .toggle {
         visibility: visible;
+        display: block;
     }
 
     nav {
         display: none;
     }
 
-    span.fa{
+    .fa{
+        
         display:block;
         color:white;
-        font-size: 2em
+        font-size: 1em;
+        padding-right: 10px;
     }
   
-    span.fa:hover{
+    .fa:hover{
           color:grey;
           
     }
 
     #hero {
-        display: flex;
-        flex-direction: column;
-        padding-right: 30px;
+        display: block;
+        background-size: 75%;
+        background-position-x: center;
+        background-position-y: 200px ;
     }
 
     #hero h2 {
-        font-size: 3em;
-        padding-top: 450px;
+        padding-top: 750px;
     }
 
-    #hero p {
-        font-size: 2em;
-    }
 
     .service-wrapper {
         display: flex;
@@ -303,9 +302,10 @@ footer .sosmed img {
         height: 10px;
     }
 }
-  
+
+
   /* Untuk Smartphone */
-  @media all and (max-width: 370px) {
+  @media all and (max-width: 670px) {
     .toggle {
         visibility: visible;
     }
@@ -326,22 +326,17 @@ footer .sosmed img {
     }
 
    #hero {
-       width: 100%;
+       width:100%;
        height: 100vh;
-       background-size: 100%;
-       background-position-x: center;
-       background-position-y: 150px;
+       background-size: 80%;
    }
 
    #hero h2 {
-       font-size:15pt;
+       font-size: 2em;
+       padding-top: 450px;
    }
+  
 
-   #hero p {
-       font-size: 11pt;
-   }
-  
-  
     .heading h2{
         font-size: 30px;
     }
@@ -354,7 +349,6 @@ footer .sosmed img {
       width: 100%;
       height:100%;
       margin-bottom: 50px;
-        float: left;
       /*width: 33%;*/
     }
   
